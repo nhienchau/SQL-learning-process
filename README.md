@@ -2,7 +2,7 @@
 # Description
 The solution of all HackerRank SQL challenges executed on Oracle environment.
 # :book: Domains
-1. [Revising the Select Query I](hackerrank.com/challenges/revising-the-select-query/problem?isFullScreen=true)
+1. [Revising the Select Query I](https://www.hackerrank.com/challenges/revising-the-select-query/problem?isFullScreen=true)
 2. [Revising the Select Query II](https://www.hackerrank.com/challenges/revising-the-select-query-2/problem?isFullScreen=true)
 3. [Select All](https://www.hackerrank.com/challenges/select-all-sql/problem?isFullScreen=true)
 4. [Select By ID](https://www.hackerrank.com/challenges/select-by-id/problem?isFullScreen=true)
