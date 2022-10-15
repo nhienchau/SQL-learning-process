@@ -30,5 +30,23 @@ The solution of all HackerRank SQL challenges executed on Oracle environment.
 4. [Binary Tree Nodes](https://www.hackerrank.com/challenges/binary-search-tree-1/problem?isFullScreen=true)
 5. [New companies](https://www.hackerrank.com/challenges/the-company/problem?isFullScreen=true)
 ## Aggregation
-1. [Revising Aggregations - The Count Function](https://www.hackerrank.com/challenges/revising-aggregations-the-count-function/problem?isFullScreen=true)
-2. 
+1. [The Count Function](https://www.hackerrank.com/challenges/revising-aggregations-the-count-function/problem?isFullScreen=true)
+2. [The Sum Function](https://www.hackerrank.com/challenges/revising-aggregations-sum/problem?isFullScreen=true)
+3. [Averages](https://www.hackerrank.com/challenges/revising-aggregations-the-average-function/problem?isFullScreen=true)
+4. [Average Population](https://www.hackerrank.com/challenges/average-population/problem?isFullScreen=true)
+5. [Japan Population](https://www.hackerrank.com/challenges/japan-population/problem?isFullScreen=true)
+6. [Population Density Difference](https://www.hackerrank.com/challenges/population-density-difference/problem?isFullScreen=true)
+7. [Population Density Difference](https://www.hackerrank.com/challenges/population-density-difference/problem?isFullScreen=true)
+8. [The Blunder](https://www.hackerrank.com/challenges/the-blunder/problem?isFullScreen=true)
+9. [Top Earners](https://www.hackerrank.com/challenges/earnings-of-employees/problem?isFullScreen=true)
+10. [Weather Observation Station 2](https://www.hackerrank.com/challenges/weather-observation-station-2/problem?isFullScreen=true)
+11. [Weather Observation Station 13](https://www.hackerrank.com/challenges/weather-observation-station-13/problem?isFullScreen=true)
+12. [Weather Observation Station 14](https://www.hackerrank.com/challenges/weather-observation-station-14/problem?isFullScreen=true)
+13. [Weather Observation Station 15](https://www.hackerrank.com/challenges/weather-observation-station-15/problem?isFullScreen=true)
+14. [Weather Observation Station 16](https://www.hackerrank.com/challenges/weather-observation-station-16/problem?isFullScreen=true)
+15. [Weather Observation Station 17](https://www.hackerrank.com/challenges/weather-observation-station-17/problem?isFullScreen=true)
+16. [Weather Observation Station 18](https://www.hackerrank.com/challenges/weather-observation-station-18/problem?isFullScreen=true)
+17. [Weather Observation Station 19](https://www.hackerrank.com/challenges/weather-observation-station-19/problem?isFullScreen=true)
+18. [Weather Observation Station 20](https://www.hackerrank.com/challenges/weather-observation-station-20/problem?isFullScreen=true)
+## Basic Join
+
