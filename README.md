@@ -49,4 +49,8 @@ The solution of all HackerRank SQL challenges executed on Oracle environment.
 17. [Weather Observation Station 19](https://www.hackerrank.com/challenges/weather-observation-station-19/problem?isFullScreen=true)
 18. [Weather Observation Station 20](https://www.hackerrank.com/challenges/weather-observation-station-20/problem?isFullScreen=true)
 ## Basic Join
-
+1. [Average Population of Each Continent](https://www.hackerrank.com/challenges/average-population-of-each-continent/problem?isFullScreen=true&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen) <br/>
+2. [Population Census](https://www.hackerrank.com/challenges/asian-population/problem?isFullScreen=true) <br/>
+3. [African Cities](https://www.hackerrank.com/challenges/african-cities/problem?isFullScreen=true) <br/>
+4. [The Report](https://www.hackerrank.com/challenges/the-report/problem?isFullScreen=true)  <br/>
+5. 
