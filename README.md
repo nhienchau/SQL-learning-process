@@ -53,4 +53,8 @@ The solution of all HackerRank SQL challenges executed on Oracle environment.
 2. [Population Census](https://www.hackerrank.com/challenges/asian-population/problem?isFullScreen=true) <br/>
 3. [African Cities](https://www.hackerrank.com/challenges/african-cities/problem?isFullScreen=true) <br/>
 4. [The Report](https://www.hackerrank.com/challenges/the-report/problem?isFullScreen=true)  <br/>
-5. 
+5. [Top Competitors](https://www.hackerrank.com/challenges/full-score/problem?isFullScreen=true&h_r=next-challenge&h_v=zen) 
+6. [Ollivander's Inventory](https://www.hackerrank.com/challenges/harry-potter-and-wands/problem?isFullScreen=true&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen)
+7. [Challenges](https://www.hackerrank.com/challenges/challenges/problem?isFullScreen=true)
+8. [Contest Leaderboard](https://www.hackerrank.com/challenges/contest-leaderboard/problem?isFullScreen=true)
+## Advanced Join
