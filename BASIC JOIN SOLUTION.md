@@ -1,0 +1,132 @@
+﻿### Average Population of Each Continent
+
+    SELECT COUN.CONTINENT,
+            FLOOR(AVG(C.POPULATION))
+    FROM CITY C
+    JOIN COUNTRY COUN
+        ON C.COUNTRYCODE = COUN.CODE
+    GROUP BY COUN.CONTINENT
+        ;
+
+### Population Census
+
+    SELECT SUM(C.POPULATION)
+    FROM CITY C
+    JOIN COUNTRY COUN
+        ON C.COUNTRYCODE = COUN.CODE
+    WHERE COUN.CONTINENT = 'Asia'
+    ;
+
+### African Cities
+
+    SELECT C.NAME
+    FROM CITY C
+    JOIN COUNTRY COUN
+        ON C.COUNTRYCODE = COUN.CODE
+    WHERE COUN.CONTINENT = 'Africa'
+    GROUP BY C.NAME
+    ;
+
+### The Report
+    SELECT 
+        CASE 
+        WHEN GRA.GRADE < 8  THEN NULL
+        WHEN GRA.GRADE >= 8 THEN STU.NAME
+    END AS NAME 
+        , GRA.GRADE
+        , STU.MARKS
+    FROM STUDENTS STU 
+    JOIN GRADES GRA
+        ON STU.MARKS >= MIN_MARK
+        AND STU.MARKS <= MAX_MARK
+    ORDER BY GRA.GRADE DESC
+            , STU.NAME ASC
+            , STU.NAME ASC
+    ;
+
+### Top Competitors
+
+    HACKER_ID ASC
+    SELECT H.HACKER_ID
+        , H.NAME
+    FROM HACKERS H
+    JOIN  SUBMISSIONS SUB 
+        ON H.HACKER_ID = SUB.HACKER_ID
+    JOIN CHALLENGES CHA
+        ON CHA.CHALLENGE_ID = SUB.CHALLENGE_ID
+    JOIN DIFFICULTY DIF
+        ON DIF.DIFFICULTY_LEVEL = CHA.DIFFICULTY_LEVEL
+    WHERE SUB.SCORE = DIF.SCORE
+    GROUP BY H.HACKER_ID, H.NAME
+    HAVING  COUNT(SUB.CHALLENGE_ID) >1
+    ORDER BY COUNT(SUB.CHALLENGE_ID) DESC
+        , H.HACKER_ID ASC
+        ;
+
+### Ollivander's Inventory
+
+    SELECT W.ID
+        , WP.AGE
+        , W.COINS_NEEDED
+        , W.POWER
+    FROM WANDS W
+    JOIN WANDS_PROPERTY WP
+        ON W.CODE = WP.CODE
+    WHERE WP.IS_EVIL =0
+        AND W.COINS_NEEDED = (SELECT MIN(W1.COINS_NEEDED)
+            FROM WANDS W1 
+            JOIN WANDS_PROPERTY WP1
+        ON W1.CODE = WP1.CODE
+        WHERE WP.AGE  = WP1.AGE
+        AND W.POWER = W1.POWER
+         GROUP BY W1.POWER) 
+    ORDER BY W.POWER DESC
+            , WP.AGE DESC
+        ;
+
+### Challenges
+
+    WITH CTE AS
+    (SELECT H.HACKER_ID HID
+	    , H.NAME HN
+		, COUNT(C.CHALLENGE_ID) CNT 
+	    FROM HACKERS H
+    JOIN CHALLENGES C 
+	    ON C.HACKER_ID = H.HACKER_ID
+    GROUP BY H.HACKER_ID, H.NAME )
+    SELECT HID
+	    , HN
+	    , CNT FROM CTE
+    WHERE CNT = (SELECT MAX(CNT) 
+    FROM CTE)
+    OR CNT IN (SELECT CNT 
+			   FROM CTE 
+			   GROUP BY CNT 
+			   HAVING COUNT(CNT) = 1)
+    ORDER BY CNT DESC
+		    , HID ASC
+    ;
+
+### Contest Leaderboard
+
+    WITH CTE AS
+    (SELECT H.HACKER_ID  HID
+		    , H.NAME  HN
+		    , S.CHALLENGE_ID CID
+		    , MAX(S.SCORE)  MS 
+	FROM HACKERS H
+    JOIN SUBMISSIONS S 
+	    ON S.HACKER_ID = H.HACKER_ID
+    GROUP BY H.HACKER_ID
+		    , H.NAME
+		    , S.CHALLENGE_ID 
+    HAVING  MAX(S.SCORE) > 0)
+    SELECT HID
+		    , HN
+		    , SUM(MS) TS FROM CTE
+    GROUP BY HID
+		    , HN
+    ORDER BY TS DESC
+		    , HID ASC
+    ;
+
